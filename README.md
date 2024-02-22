@@ -6,16 +6,20 @@
 
 <a name = "introduction-to-js-variable"> </a>
 ## What is Variable in JavaScript?
+
 প্রোগ্রামিং এ **Variable** জিনিসটাকে আমরা একটা **Container** হিসাবে চিন্তা করতে পারি, যেইটাতে আমরা আমাদের **Data/Information** গুলো **Store** করতে পারি। এবং যখন দরকার হবে তখন তখন আমরা আমাদের সেই **Store** করা **Data** গুলোকে একটা প্রোগ্রামের বিভিন্ন জায়গায় ব্যাবহার করতে পারি, বা সেইগুলোকে নিয়ে কাজ  করতে পারি।
 আমরা যখন কোনো **Variable Declare** করি তখন সেইটা **Store** হয় আমাদের কম্পিউটারে থাকা **Memory** তে । অর্থ্যাৎ, আমরা মেমোরির কিছু **Space Reserve** করছি একেকটা **Variable Declare** করার জন্য।
+
 ## Why Variable?
+
 জাভাস্ক্রিপ্টে একটা প্রোগ্রামে অনেকগুলো কারণেই আমরা Variable ব্যাবহার করে থাকি। তার ভিতরে উল্লেখযোগ্য কিছু কারণ হচ্ছে -</br>
 1. **Data Storage:** </br>
   একটা প্রোগ্রামে Variable ব্যাবহার করার অন্যতম প্রধাণ কারণ হচ্ছে Data গুলোকে Store করে রাখা। এমনকি অনেকটা **Structured Way** তে Store করে রাখা, যাতে প্রয়োজন অনুযায়ী আমরা সেইগুলোকে Access করতে পারি।</br>
+  
 2. **Dynamic Content:** </br>
-  Variable  এর ব্যাবহার আমাদের প্রোগ্রামকে আরো বেশি **Dynamic** করে ফেলতে সাহায্য করে। যেমন কাজের প্রয়োজনে আমাদের অনেক **Data Change/Modify** করা লাগতে পারে। এই জিনিসটা আমরা Variable ব্যাবহার করার মাধ্যমে করে ফেলতে 
-  পারি।
-3. **Increase Readability:** </br>
+  Variable  এর ব্যাবহার আমাদের প্রোগ্রামকে আরো বেশি **Dynamic** করে ফেলতে সাহায্য করে। যেমন কাজের প্রয়োজনে আমাদের অনেক **Data Change/Modify** করা লাগতে পারে। এই জিনিসটা আমরা Variable ব্যাবহার করার মাধ্যমে করে ফেলতে পারি।
+
+4. **Increase Readability:** </br>
   আমাদের প্রোগ্রামে যখন সঠিক Variable এর নামকরণ করতে পারি যেইটা দ্বারা আমাদের Declare করা Variable টা ঠিক কি কাজ করছে সেইটা বোঝা যায়, তখন সেই প্রোগ্রাম এর **Readability** অনেক বেড়ে যায়। পরে যখন অন্য কোনো 
   ডেভেলপার আমাদের লেখা কোডগুলোকে **Maintain** করবে তখন তারা খুব সহজেই সেইগুলাকে Maintain করতে পারবে। কারণ তারা Already জানবে ঠিক কোন কাজে আমরা কোন Variable টা Declare করেছি।
 
@@ -50,6 +54,7 @@ let MyName = “Sohag”;
 ```
 উপরের প্রতিটা পদ্ধতিই সঠিক, একেকজন একেকটা Prefer করে, এই আরকি! আপনি আপনার পছন্দমত একটা **Method Follow** করে **Variable Declare** করতে পারেন। </br>
 >**Note:** আপনি শুধু যে **Variable Declare** করার জন্য উপরোক্ত Method গুলো Follow করবেন, এমনটা কিন্তু না। **Array, Function** সহ যেকোনো কিছু Declare করার জন্য এই একই নিয়মই প্রযোজ্য হবে। </br>
+
 <a name="var-let-and-const-explained"></a>
 ## var, let and const Explained: </br>
 জাভাস্ক্রিপ্ট এ আমরা মূলত ৪ ভাবে **Variable Declare** করতে পারি। এইগুলা হচ্ছে </br>
@@ -57,6 +62,7 @@ let MyName = “Sohag”;
 2. ***let*** ব্যাবহার করে,
 3. ***const*** ব্যাবহার করে,
 4. ***automatically (Implicitly Created and Assigned Values Without Explicit Declaration) / ICAVWED / Undeclared*** </br>
+
 ### var: </br>
 এই ```var``` keyword জাভাস্ক্রিপ্ট এ প্রথম Introduce করানো হয় ১৯৯৫ সালে এবং ২০১৫ সাল পর্যন্ত জাভাস্ক্রিপ্ট এর **ES6** Version আসার আগে পর্যন্ত ```var``` ব্যাবহার করেই জাভাস্ক্রিপ্ট এ Variable Declare করা হতো। যদিও এখন var ব্যাবহার করে Variable Declare করতে নিরুৎসাহিত করা হয়। কিন্তু যদি আমাদের অনেক পুরাতন ***Code Base*** নিয়ে কাজ করতে হয়, যেখানে তারা var ব্যাবহার করেছে, সেই সমস্ত প্রজেক্টে আমাদের var ব্যাবহার করেই Variable Declare করা লাগতে পারে। </br>
 
@@ -65,9 +71,7 @@ Javascript এ var ব্যাবহার করে Variable Declare করা
 
 উপরে এখন পর্যন্ত আমরা শুধু Variable Declare করেছি, কিন্তু এতে কোনো **Value Assign** করি নাই। </br>
 
-**Assign Value Using var:** 
-</br>
-
+**Assign Value Using var:** </br>
 কোনো Variable এ ***Value Assign*** করার জন্য আমরা ***Equal Sign (=)*** ব্যাবহার করি, এই  **Equal Sign (=)** টাকে Javascript এ ***Assignment Operator*** ও বলা হয়। এই Javascript এ কোনো জিনিস Equal কি না এইটা বোঝা্র জন্য কিন্তু এই  **Operator** ব্যাবহার করা হয় না। এই **Equal Sign (=)** টা Javascript এ ব্যাবহার করা হয় ***Variable*** এ ***Value Assign*** করার জন্য। </br>
 যেমন:
 ```javascript
@@ -75,23 +79,40 @@ var myGf;
 myGf = 'Sadia';
 ```
  </br>
-উপরের জিনিসটা আবার Explain করি, এইখানে = এই Operator টা দিয়ে কিন্তু এইটা বোঝানে হচ্ছে না, যে ***myGf*** আর Sadia এই ২ টা জিনিস সমান বা Equal. বরং এইটা বোঝানে হচ্ছে যে, myGf  Variable টার ভিতরে Sadia নামের Value টাকে Assign করে দাও। 
+উপরের জিনিসটা আবার Explain করি, এইখানে = এই Operator টা দিয়ে কিন্তু এইটা বোঝানে হচ্ছে না, যে myGf আর Sadia এই ২ টা জিনিস সমান বা Equal. বরং এইটা বোঝানে হচ্ছে যে, myGf  Variable টার ভিতরে Sadia নামের Value টাকে Assign করে দাও। 
 
 আমরা আগেই একটা Example দিসিলাম না যে, Variable জিনিসটা হচ্ছে একটা **Container** এর মত, যেইখানে আমরা আমাদের **Value** গুলো **Store** করে রাখি। এইখানেও কিন্তু same জিনিসটাই হচ্ছে, এইখানে আমরা ***myGf*** নামের Variable টার ভিতরে ***‘Sadia’*** নামের Value টাকে **Store** করে রাখছি। 
 
 >**নোটঃ** আমরা চাইলে কিন্তু Variable Declare করার সময় ই **Value Assign** করে দিতে পারি। </br>
 
 **Re-declare Variable Using var:** </br>
-
 **Re-declare*** বলতে বোঝায় একই নামে ২ টা Variable Declare  করা। যেমনঃ </br>
 ```javascript
 var carName = 'BMW';
 var carName = 'AUDI';
 console.log(carName); //AUDI
 ```
-</br>
-উপরে আমরা var ব্যাবহার করে একই নামে ```carName``` দুইটা Variable Declare করেছি। এক্ষেত্রে আমাদের Code এ কোনো Error আসবে না। 
-কিন্তু এইখানে একটা Twist আছে, এই ```carName``` Variable টা যদি আমরা console.log করে output দেখতে চাই, তাহলে দেখব আমাদের ```AUDI``` দেখাচ্ছে ouput হিসাবে। কিন্তু আমরা তো প্রথম Value টা  দিয়েছিলাম BMW । তাহলে BMW কে বাদ দিয়ে AUDI কে কেন Output হিসাবে  দেখাচ্ছে।
-এর কারণ হচ্ছে, আমরা পরে যেই Value টা Assign করব সেইটার Priority বেশি, এবং নিচের Variable টা উপরের Variable টা কে Overwrite করে ফেলছে।
+উপরে আমরা var ব্যাবহার করে একই নামে **```carName```** দুইটা Variable Declare করেছি। এক্ষেত্রে আমাদের Code এ কোনো Error আসবে না। 
+কিন্তু এইখানে একটা Twist আছে, এই **```carName```** Variable টা যদি আমরা console.log করে output দেখতে চাই, তাহলে দেখব আমাদের **AUDI** দেখাচ্ছে ouput হিসাবে। কিন্তু আমরা তো প্রথম Value টা  দিয়েছিলাম **BMW** । তাহলে **BMW** কে বাদ দিয়ে **AUDI** কে কেন Output হিসাবে  দেখাচ্ছে।
+এর কারণ হচ্ছে, আমরা পরে যেই Value টা **Assign** করব সেইটার **Priority** বেশি, এবং নিচের Variable টা উপরের Variable টা কে **Overwrite** করে ফেলছে।</br>
 
+**Re-assign Value Using var:**
+**Re-assign** বলতে বোঝায় **একই** Variable এ 2 টা **Value Assign** করা। যেমনঃ
+```javascript
+var carName = 'BMW';
+    carName = 'AUDI';
+    
+console.log(carName); //AUDI
+```
+উপরে আমরা **```carName```** নামের Variable টা তে প্রথমে **Value Assign** করেছি, **BMW** এবং পরে আমার সেই একই Variable এ **Value Assign** করেছি **AUDI**. 
+আমরা কিন্তু এইখানে ২ টা Variable  Declare করি নাই, বরং Variable  একটাই, জাস্ট Value টা **Change** করেছি। 
+এবং এইখানে নিচে যেই Value টা Assign করা থাকবে সেইটার **Priority** বেশি থাকবে এবং উপরেরটাকে নিচের Value টা **Overwrite** করে ফেলবে, যার কারণে Output হিসাবে নিচের Value টাই দেখাবে। </br>
 
+## Why var?
+এখনকার দিনে var ব্যাবহার করাটা মোটেও **Recommended** না, কিন্তু তবুও আপনার অনেক জায়গায় **var** ব্যাবহার  করা লাগতে পারে, যখন:
+
+- আপনি পুরাতন ***Code Base*** নিয়ে কাজ করছে যেইখানে var ব্যাবহার করা হয়েছে। এইরকম জায়গায় আপনি ***Code Refactor*** করতে পারবেন না বেশিরভাগ সময়, তাই সেখানে অনেকটা বাধ্য হয়েই var ব্যাবহার করতে হবে।
+- যখন আপনার ***Global-Scoped or Function-Scoped Variable*** দরকার হবে যেইটা আপনি সবজায়গায় **Access** করতে চান, তখন আপনার var ব্যাবহার করা লাগতে পারে।
+
+## Why Not var?
+var ব্যাবহার না করার অনেকগুলা কারণ আছে তার ভিতরে অন্যতম কারণ হচ্ছে ***Accidental Naming Conflicts.*** আমরা জানি, var হচ্ছে ***Global-Scoped or Function-Scoped*** এবং আমরা চাইলে এইটাকে **Re-assign**, বা **Re-declare** ও করতে পারি। অনেক সময় ভুল করে একই নামে **২** বার **Variable Declare** করে ফেলতে পারি যেইখানে একেকটা Variable হয়ত একেকটা কাজের জন্য Declare করে ছিলাম। পরে এইটা মনে না থাকলে দেখব, আমরা এক ধরনের রেজাল্ট expect করছি কিন্তু রেজাল্ট পাচ্ছি আরেক ধরনের।
