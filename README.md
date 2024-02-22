@@ -4,22 +4,6 @@
 **1. [Introduction to JavaScript Variable](#introduction-to-js-variable)** </br>
 **2. [var, let and const Explained](#var-let-and-const-explained)**
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <a name = "introduction-to-js-variable"> </a>
 ## What is Variable in JavaScript?
 প্রোগ্রামিং এ **Variable** জিনিসটাকে আমরা একটা **Container** হিসাবে চিন্তা করতে পারি, যেইটাতে আমরা আমাদের **Data/Information** গুলো **Store** করতে পারি। এবং যখন দরকার হবে তখন তখন আমরা আমাদের সেই **Store** করা **Data** গুলোকে একটা প্রোগ্রামের বিভিন্ন জায়গায় ব্যাবহার করতে পারি, বা সেইগুলোকে নিয়ে কাজ  করতে পারি।
@@ -66,3 +50,5 @@ let MyName = “Sohag”;
 ```
 উপরের প্রতিটা পদ্ধতিই সঠিক, একেকজন একেকটা Prefer করে, এই আরকি! আপনি আপনার পছন্দমত একটা **Method Follow** করে **Variable Declare** করতে পারেন। </br>
 >**Note:** আপনি শুধু যে **Variable Declare** করার জন্য উপরোক্ত Method গুলো Follow করবেন, এমনটা কিন্তু না। **Array, Function** সহ যেকোনো কিছু Declare করার জন্য এই একই নিয়মই প্রযোজ্য হবে। </br>
+<a name="var-let-and-const-explained></a>
+## var, let and const Explained: </br>
