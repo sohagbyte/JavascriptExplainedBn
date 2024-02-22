@@ -58,4 +58,40 @@ let MyName = “Sohag”;
 3. ***const*** ব্যাবহার করে,
 4. ***automatically (Implicitly Created and Assigned Values Without Explicit Declaration) / ICAVWED / Undeclared*** </br>
 ### var: </br>
-এই ```var``` keyword জাভাস্ক্রিপ্ট এ প্রথম Introduce করানো হয় ১৯৯৫ সালে এবং ২০১৫ সাল পর্যন্ত জাভাস্ক্রিপ্ট এর ES6 Version আসার আগে ```var``` ব্যাবহার করেই জাভাস্ক্রিপ্ট এ Variable Declare করা হতো। 
+এই ```var``` keyword জাভাস্ক্রিপ্ট এ প্রথম Introduce করানো হয় ১৯৯৫ সালে এবং ২০১৫ সাল পর্যন্ত জাভাস্ক্রিপ্ট এর **ES6** Version আসার আগে পর্যন্ত ```var``` ব্যাবহার করেই জাভাস্ক্রিপ্ট এ Variable Declare করা হতো। যদিও এখন var ব্যাবহার করে Variable Declare করতে নিরুৎসাহিত করা হয়। কিন্তু যদি আমাদের অনেক পুরাতন ***Code Base*** নিয়ে কাজ করতে হয়, যেখানে তারা var ব্যাবহার করেছে, সেই সমস্ত প্রজেক্টে আমাদের var ব্যাবহার করেই Variable Declare করা লাগতে পারে। </br>
+
+**Declare Variable Using var:** </br>
+Javascript এ var ব্যাবহার করে Variable Declare করার জন্য আমাদের প্রথমে ***var*** শব্দটা বা keyword টা লিখতে হবে, তারপরে Variable এর ***Name*** লিখতে হবে, এবং সবশেষে ***Semi-colon*** দিয়ে Statement টা Close করতে হবে। যেমনঃ ```var  myGf;``` । এই var keyword টা কিন্তু সবসময় **Small Letter** এ ই লিখতে হবে। তা না হইলে Javascript আমাদের Error দেখাবে। </br>
+
+উপরে এখন পর্যন্ত আমরা শুধু Variable Declare করেছি, কিন্তু এতে কোনো **Value Assign** করি নাই। </br>
+
+**Assign Value Using var:** 
+</br>
+
+কোনো Variable এ ***Value Assign*** করার জন্য আমরা ***Equal Sign (=)*** ব্যাবহার করি, এই  **Equal Sign (=)** টাকে Javascript এ ***Assignment Operator*** ও বলা হয়। এই Javascript এ কোনো জিনিস Equal কি না এইটা বোঝা্র জন্য কিন্তু এই  **Operator** ব্যাবহার করা হয় না। এই **Equal Sign (=)** টা Javascript এ ব্যাবহার করা হয় ***Variable*** এ ***Value Assign*** করার জন্য। </br>
+যেমন:
+```javascript
+var myGf;
+myGf = 'Sadia';
+```
+ </br>
+উপরের জিনিসটা আবার Explain করি, এইখানে = এই Operator টা দিয়ে কিন্তু এইটা বোঝানে হচ্ছে না, যে ***myGf*** আর Sadia এই ২ টা জিনিস সমান বা Equal. বরং এইটা বোঝানে হচ্ছে যে, myGf  Variable টার ভিতরে Sadia নামের Value টাকে Assign করে দাও। 
+
+আমরা আগেই একটা Example দিসিলাম না যে, Variable জিনিসটা হচ্ছে একটা **Container** এর মত, যেইখানে আমরা আমাদের **Value** গুলো **Store** করে রাখি। এইখানেও কিন্তু same জিনিসটাই হচ্ছে, এইখানে আমরা ***myGf*** নামের Variable টার ভিতরে ***‘Sadia’*** নামের Value টাকে **Store** করে রাখছি। 
+
+>**নোটঃ** আমরা চাইলে কিন্তু Variable Declare করার সময় ই **Value Assign** করে দিতে পারি। </br>
+
+**Re-declare Variable Using var:** </br>
+
+**Re-declare*** বলতে বোঝায় একই নামে ২ টা Variable Declare  করা। যেমনঃ </br>
+```javascript
+var carName = 'BMW';
+var carName = 'AUDI';
+console.log(carName); //AUDI
+```
+</br>
+উপরে আমরা var ব্যাবহার করে একই নামে ```carName``` দুইটা Variable Declare করেছি। এক্ষেত্রে আমাদের Code এ কোনো Error আসবে না। 
+কিন্তু এইখানে একটা Twist আছে, এই ```carName``` Variable টা যদি আমরা console.log করে output দেখতে চাই, তাহলে দেখব আমাদের ```AUDI``` দেখাচ্ছে ouput হিসাবে। কিন্তু আমরা তো প্রথম Value টা  দিয়েছিলাম BMW । তাহলে BMW কে বাদ দিয়ে AUDI কে কেন Output হিসাবে  দেখাচ্ছে।
+এর কারণ হচ্ছে, আমরা পরে যেই Value টা Assign করব সেইটার Priority বেশি, এবং নিচের Variable টা উপরের Variable টা কে Overwrite করে ফেলছে।
+
+
