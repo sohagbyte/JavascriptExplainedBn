@@ -50,5 +50,12 @@ let MyName = “Sohag”;
 ```
 উপরের প্রতিটা পদ্ধতিই সঠিক, একেকজন একেকটা Prefer করে, এই আরকি! আপনি আপনার পছন্দমত একটা **Method Follow** করে **Variable Declare** করতে পারেন। </br>
 >**Note:** আপনি শুধু যে **Variable Declare** করার জন্য উপরোক্ত Method গুলো Follow করবেন, এমনটা কিন্তু না। **Array, Function** সহ যেকোনো কিছু Declare করার জন্য এই একই নিয়মই প্রযোজ্য হবে। </br>
-<a name="var-let-and-const-explained></a>
+<a name="var-let-and-const-explained"></a>
 ## var, let and const Explained: </br>
+জাভাস্ক্রিপ্ট এ আমরা মূলত ৪ ভাবে **Variable Declare** করতে পারি। এইগুলা হচ্ছে </br>
+1. ***var*** ব্যাবহার করে,
+2. ***let*** ব্যাবহার করে,
+3. ***const*** ব্যাবহার করে,
+4. ***automatically (Implicitly Created and Assigned Values Without Explicit Declaration) / ICAVWED / Undeclared*** </br>
+### var: </br>
+এই ```var``` keyword জাভাস্ক্রিপ্ট এ প্রথম Introduce করানো হয় ১৯৯৫ সালে এবং ২০১৫ সাল পর্যন্ত জাভাস্ক্রিপ্ট এর ES6 Version আসার আগে ```var``` ব্যাবহার করেই জাভাস্ক্রিপ্ট এ Variable Declare করা হতো। 
